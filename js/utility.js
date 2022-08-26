@@ -4,7 +4,7 @@ const list = document.getElementById('order-list');
 function getTextFromSelectButton(players){
     const player = document.getElementById(players);
     const playerName = player.innerText;
-    console.log(playerName);
+    // console.log(playerName);
     
     // putting players name into ol
     
@@ -14,16 +14,8 @@ function getTextFromSelectButton(players){
     list.appendChild(li);
 
     // return list.children.length;
-    const highestList = list.children.length
+    // const highestList = list.children.length
     // console.log(list.children.length);
-
-    
-    
-    
-    
-    // return highestList;
-       
-
     
 }
 
@@ -50,7 +42,7 @@ function getInput(inputValue){
 
 // calculation function end 
 
-// set innertext 
+// set innertext  function start
 
 function getInnerText(textName){
     const textString = document.getElementById(textName).innerText;
@@ -59,6 +51,8 @@ function getInnerText(textName){
     return text;
 
 }
+
+// set innertext function end 
 
 
 

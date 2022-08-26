@@ -1,7 +1,7 @@
 
 document.getElementById('messi').addEventListener('click', function(){
     
-    const player = getTextFromSelectButton('messi-text');
+    getTextFromSelectButton('messi-text');
     disable('messi');
     
     
@@ -10,9 +10,9 @@ document.getElementById('messi').addEventListener('click', function(){
 
 document.getElementById('ronaldo').addEventListener('click', function(){
     
-    const player = getTextFromSelectButton('ronaldo-text');
+    getTextFromSelectButton('ronaldo-text');
     disable('ronaldo');
-    // console.log(player);
+    
     
 
 
@@ -20,56 +20,56 @@ document.getElementById('ronaldo').addEventListener('click', function(){
 
 document.getElementById('neymar').addEventListener('click', function(){
     
-    const player = getTextFromSelectButton('neymar-text');
+    getTextFromSelectButton('neymar-text');
     disable('neymar');
-    // console.log(player);
+    
 
 })
 
 document.getElementById('kdb').addEventListener('click', function(){
     
-    const player = getTextFromSelectButton('kdb-text');
+    getTextFromSelectButton('kdb-text');
     disable('kdb');
-    // console.log(player);
+    
 
 })
 
 document.getElementById('benzema').addEventListener('click', function(){
     
-    const player = getTextFromSelectButton('benzema-text');
+    getTextFromSelectButton('benzema-text');
     disable('benzema');
-    // console.log(player);
+    
 
 })
 
 document.getElementById('pedri').addEventListener('click', function(){
     
-    const player = getTextFromSelectButton('pedri-text');
+    getTextFromSelectButton('pedri-text');
     disable('pedri');
-    // console.log(player);
+    
 })
 
 document.getElementById('lewa').addEventListener('click', function(){
     
-    const player = getTextFromSelectButton('lewa-text');
+    getTextFromSelectButton('lewa-text');
     disable('lewa');
-    // console.log(player);
+    
 
 })
 
 document.getElementById('courtois').addEventListener('click', function(){
     
-    const player = getTextFromSelectButton('courtois-text');
+    getTextFromSelectButton('courtois-text');
     disable('courtois');
-    // console.log(player);
+    
 
 })
 
 document.getElementById('romero').addEventListener('click', function(){
     
-    const player = getTextFromSelectButton('romero-text');
+    getTextFromSelectButton('romero-text');
     disable('romero');
-    // console.log(player);
+    
 
     
 
@@ -89,12 +89,8 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     const playerExpenseElement = document.getElementById('player-expense');
     playerExpenseElement.innerText = totalPlayerExpense;
 
-    // const mahim = getInnerText('player-expense');
-    // console.log(mahim);
-
     
 
-    
 
 })
 
@@ -109,7 +105,7 @@ document.getElementById('calculate-total').addEventListener('click', function(){
     const finalTotalCostElement = document.getElementById('final-total-cost');
     finalTotalCostElement.innerText = overAllCost;
 
-    
+
 })
 
 
