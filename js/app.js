@@ -76,32 +76,42 @@ document.getElementById('romero').addEventListener('click', function(){
 })
 
 document.getElementById('calculate-btn').addEventListener('click', function(){
-    const perPlayer = getInput('per-player-field');
-    // console.log(perPlayer);
+    const perPlayerInput = getInput('per-player-field');
+    
 
     
     const totalPlayer = list.children.length;
     
-    // console.log(list.children.length); important
-
-    // const playerExpenseString = playerExpenseElement.innerText;
-    // const playerExpense = parseFloat(playerExpenseString);
     
-    const totalPlayerExpense = perPlayer * totalPlayer;
+    
+    const totalPlayerExpense = perPlayerInput * totalPlayer;
     
     const playerExpenseElement = document.getElementById('player-expense');
     playerExpenseElement.innerText = totalPlayerExpense;
-    
 
-
-
-    
+    // const mahim = getInnerText('player-expense');
+    // console.log(mahim);
 
     
 
-
+    
 
 })
+
+document.getElementById('calculate-total').addEventListener('click', function(){
+    const manager = getInput('manager');
+    const coach = getInput('coach');
+
+    const playerTotalcost = getInnerText('player-expense');
+
+    const overAllCost = manager + coach + playerTotalcost;
+
+    const finalTotalCostElement = document.getElementById('final-total-cost');
+    finalTotalCostElement.innerText = overAllCost;
+
+    
+})
+
 
 
 

@@ -21,7 +21,7 @@ function getTextFromSelectButton(players){
     
     
     
-    return highestList;
+    // return highestList;
        
 
     
@@ -39,17 +39,26 @@ function disable(playerId){
 // calculation function start 
 
 function getInput(inputValue){
-    const perPlayerField = document.getElementById(inputValue);
-    const perPlayerFieldString = perPlayerField.value;
-    const perPlayer = parseFloat(perPlayerFieldString);
+    const inputField = document.getElementById(inputValue);
+    const inputFieldString = inputField.value;
+    const total = parseFloat(inputFieldString);
 
-    return perPlayer;
+    return total;
 
 }
 
+
 // calculation function end 
 
+// set innertext 
 
+function getInnerText(textName){
+    const textString = document.getElementById(textName).innerText;
+    const text = parseFloat(textString);
+
+    return text;
+
+}
 
 
 
